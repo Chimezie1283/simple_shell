@@ -91,7 +91,7 @@ int _strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t j;
 
-	for (j = 0; s1[j] && s2[j] && j < n;ji++)
+	for (j = 0; s1[j] && s2[j] && j < n; j++)
 	{
 		if (s1[j] > s2[j])
 			return (s1[j] - s2[j]);
