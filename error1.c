@@ -26,12 +26,12 @@ char *error_128(char **args)
 		return (NULL);
 	}
 
-	_strcpy(error, name);
-	_strcat(error, ": ");
-	_strcat(error, hist_str);
-	_strcat(error, ": ");
-	_strcat(error, args[0]);
-	_strcat(error, ": Permission declined\n");
+	_strcpy(errorz, name);
+	_strcat(errorz, ": ");
+	_strcat(errorz, hist_str);
+	_strcat(errorz, ": ");
+	_strcat(errorz, args[0]);
+	_strcat(errorz, ": Permission declined\n");
 
 	free(hist_str);
 	return (errorz);
@@ -60,12 +60,12 @@ char *error_129(char **args)
 		return (NULL);
 	}
 
-	_strcpy(error, name);
-	_strcat(error, ": ");
-	_strcat(error, hist_str);
-	_strcat(error, ": ");
-	_strcat(error, args[0]);
-	_strcat(error, ": unknown command\n");
+	_strcpy(errorz, name);
+	_strcat(errorz, ": ");
+	_strcat(errorz, hist_str);
+	_strcat(errorz, ": ");
+	_strcat(errorz, args[0]);
+	_strcat(errorz, ": unknown command\n");
 
 	free(hist_str);
 	return (errorz);

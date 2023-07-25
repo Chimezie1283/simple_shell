@@ -28,7 +28,7 @@ int prog(char **args, char *handle)
 	{
 		if (errno == ENOENT)
 		{
-			fprintf(stderr, "%s: %d: %s: not found\n", progname, errno, args[0]);
+			fprintf(stderr, "%s: %d: %s: not found\n", handle, errno, args[0]);
 			fflush(stderr);
 			exit(127);
 		}

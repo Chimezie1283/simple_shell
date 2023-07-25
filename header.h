@@ -19,7 +19,7 @@
 
 int prog(char **args, char *handle);
 int execute_input(char *input, char *);
-void dunamicMode(char *argv[]);
+void dynamicMode(char *argv[]);
 void batching(char *argv[]);
 int run_branch(char **args, char *handle);
 int buffer_branch_procedure(pid_t pid);
