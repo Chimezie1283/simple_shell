@@ -42,7 +42,7 @@ int numba_lent(int numba)
 char *_itoa(int numba)
 {
 	char *bufa;
-	int lent = num_lent(numba);
+	int lent = numba_lent(numba);
 	unsigned int numba1;
 
 	bufa = malloc(sizeof(char) * (lent + 1));

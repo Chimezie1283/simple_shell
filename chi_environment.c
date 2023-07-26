@@ -67,7 +67,7 @@ char **_getenv(const char *vary)
 	lent = _strlen(vary);
 	for (indez = 0; environ[indez]; indez++)
 	{
-		if (_strncmp(vary, environ[indez], lent) == 0)
+		if (strncmp(vary, environ[indez], lent) == 0)
 			return (&environ[indez]);
 	}
 

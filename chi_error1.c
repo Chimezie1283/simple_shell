@@ -1,4 +1,4 @@
-#include "errors.h"
+#include "header.h"
 
 char *errors_127(char **args);
 char *errors_128(char **args);
