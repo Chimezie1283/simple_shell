@@ -56,7 +56,7 @@ typedef struct builtin_z
 } builtin_t;
 
 /**
- * struct alias_s - This defines the aliases.
+ * struct alias_z - This defines the aliases.
  * @name: This is the name of the alias.
  * @value: This is the value of the alias.
  * @next: A pointer to another struct alias_s.
@@ -82,8 +82,8 @@ int shellto_alias(char **args, char __attribute__((__unused__)) **vront);
 int shellto_help(char **args, char __attribute__((__unused__)) **vront);
 
 /* These prototypes helps the builtins */
-char **_copyenv(void);
-void free_env(void);
+char **_coppienv(void);
+void frees_env(void);
 char **_getenv(const char *var);
 
 /* These prototypes helps the main */
@@ -97,14 +97,14 @@ void free_list(list_t *head);
 char *_itoa(int num);
 
 /* These prototypes are the string functions */
-int _strspn(char *s, char *accept);
-int _strlen(const char *s);
+int _stringsp(char *s, char *acc);
+int _strlen(const char *f);
 char *_strcat(char *dest, const char *src);
-char *_strncat(char *dest, const char *src, size_t n);
+char *_stringcat(char *dest, const char *src, size_t n);
 char *_strcpy(char *dest, const char *src);
-char *_strchr(char *s, char c);
-int _strcmp(char *s1, char *s2);
-int _strncmp(const char *s1, const char *s2, size_t n);
+char *_stringchar(char *s, char c);
+int _stringcop(char *s1, char *s2);
+int _stringcop2(const char *s1, const char *s2, size_t n);
 
 /* These prototypes helps the input */
 int call_args(char **args, char **vront, int *exe_ret);
@@ -118,14 +118,14 @@ void free_args(char **args, char **vront);
 char **replace_aliases(char **args);
 
 /* These prototypes handles errors */
-char *error_2_cd(char **args);
+char *errors_two_cd(char **args);
 int create_error(char **args, int err);
-char *error_env(char **args);
-char *error_1(char **args);
-char *error_2_exit(char **args);
-char *error_2_syntax(char **args);
-char *error_126(char **args);
-char *error_127(char **args);
+char *errors_environ(char **args);
+char *error_one(char **args);
+char *errors_two_exit(char **args);
+char *errors_two_synt(char **args);
+char *errors_127(char **args);
+char *errors_128(char **args);
 
 /* These prototypes helps the linkedlist */
 alias_t *add_alias_end(alias_t **head, char *name, char *value);
@@ -133,15 +133,15 @@ void free_alias_list(alias_t *head);
 list_t *add_node_end(list_t **head, char *dir);
 void free_list(list_t *head);
 
-void helps_all(void);
+void helps_every(void);
 void helps_alias(void);
 void helps_cd(void);
 void helps_exit(void);
 void helps_help(void);
-void helps_env(void);
-void helps_setenv(void);
-void helps_unsetenv(void);
-void helps_history(void);
+void helps_environ(void);
+void helps_setenviron(void);
+void helps_unsetenviron(void);
+void helps_hist(void);
 
 int proct_file_commands(char *file_path, int *exe_ret);
 #endif /*END OF THE HEADER_H FILE */
