@@ -3,8 +3,8 @@
 This is a simple shell project executed in C. This prject provides a basic command interface for the interaction of users
 
 ## Authors
-Chimezie AGBO
-Ademola ASAMU
+- <Chimezie AGBO>
+- <Ademola ASAMU>
 
 ## Key Outputs
 - Executes commands: User can enter commans to be executed by the shell
